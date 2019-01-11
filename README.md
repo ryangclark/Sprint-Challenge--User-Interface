@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+HTML is the language that tells the browser what to display. But the browser isn't the only thing that reads that language. Three other things read the HTML you write:
+First, other developers read your HTML. When you're working on a large project, multiple people work on the same code. Writing code in a way that is easy for others to understand is essential to effective collaboration. Plus, you'll be thankful that others do the same for you.
+Second, everyone should be able to access your content. Everyone. People with limited vision or other circumstances have screen readers and other assistive tools that read your HTML and help them navigate the web. Your HTML has a direct impact on how those tools function for those people.
+Third, the web is constantly being crawled by programs for companies like Google and Bing to index the web and provide search results. If you want to optimize for those web crawlers and their algorithms, it's wise to write your HTML in ways that make it easy for those crawlers to give you a high score.
+
+To do all of that, we write our HTML with certain guidelines we call "semantic HTML". It structures your code in ways that is easier for developers (including yourself), screen readers, and web crawlers to navigate and to understand the heirarchy of the page – that is, what's most important and what's least important.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+First, the width of a ```block``` element is set based on the width of its parent container, whereas the width of an ```inline``` element is based on the content it contains.
+
+Second, the default height of a ```block``` element is based on the content it contains, whereas an ```inline``` element doesn't impact vertical spacing.
+
+The general guideline is that ```block``` elements are for building webpages and layout, whereas ```inline``` elements are for styling the stuff inside the ```block```.
 
 3. What are the 4 areas of the box model?
 
+Content, padding, border, and margin.
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+The cross axis.
+
 5. Explain why git is valuable to a team of developers.
+
+Git allows a team to collaborate on a single piece of software by controlling versions of that software. Branching is quite useful because it allows individuals to work on a specific section of the code base. For instance, one developer might be working on authentication while another is simultaneously working on the landing page. When they are finished, they can submit their changes to the top-level branch (called "master" in Git but that's a pretty awful word, really, with some nasty connotations and I don't know why Git uses it), and perhaps a more senior developer can review that submission and, if it's good-to-go, merge it into the live code. It's great!
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
