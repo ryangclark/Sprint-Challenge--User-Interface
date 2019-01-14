@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+HTML is the language that tells the browser what to display. But the browser isn't the only thing that reads that language. Three other things read the HTML you write:
+First, other developers read your HTML. When you're working on a large project, multiple people work on the same code. Writing code in a way that is easy for others to understand is essential to effective collaboration. Plus, you'll be thankful that others do the same for you.
+Second, everyone should be able to access your content. Everyone. People with limited vision or other circumstances have screen readers and other assistive tools that read your HTML and help them navigate the web. Your HTML has a direct impact on how those tools function for those people.
+Third, the web is constantly being crawled by programs for companies like Google and Bing to index the web and provide search results. If you want to optimize for those web crawlers and their algorithms, it's wise to write your HTML in ways that make it easy for those crawlers to give you a high score.
+
+To do all of that, we write our HTML with certain guidelines we call "semantic HTML". It structures your code in ways that is easier for developers (including yourself), screen readers, and web crawlers to navigate and to understand the heirarchy of the page – that is, what's most important and what's least important.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+First, the width of a ```block``` element is set based on the width of its parent container, whereas the width of an ```inline``` element is based on the content it contains.
+
+Second, the default height of a ```block``` element is based on the content it contains, whereas an ```inline``` element doesn't impact vertical spacing.
+
+The general guideline is that ```block``` elements are for building webpages and layout, whereas ```inline``` elements are for styling the stuff inside the ```block```.
 
 3. What are the 4 areas of the box model?
 
+Content, padding, border, and margin.
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+The cross axis.
+
 5. Explain why git is valuable to a team of developers.
+
+Git allows a team to collaborate on a single piece of software by controlling versions of that software. Branching is quite useful because it allows individuals to work on a specific section of the code base. For instance, one developer might be working on authentication while another is simultaneously working on the landing page. When they are finished, they can submit their changes to the top-level branch (called "master" in Git but that's a pretty awful word, really, with some nasty connotations and I don't know why Git uses it), and perhaps a more senior developer can review that submission and, if it's good-to-go, merge it into the live code. It's great!
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -71,30 +90,30 @@ Your finished project must include all of the following requirements:
 
 [Review the provided design file for the home page](design-files/home.png).  Notice the navigation and header images are missing.
 
-* [ ] Build the HTML and CSS to create the missing navigation and header.
-* [ ] Link the `About` navigation item to the [about.html](about.html) page
+* [x] Build the HTML and CSS to create the missing navigation and header.
+* [x] Link the `About` navigation item to the [about.html](about.html) page
 
 You will also notice there are 10 boxes on the home page that need background colors.  Use this list below to correctly style each box:
 
-* [ ] box1: `teal`
-* [ ] box2: `gold`
-* [ ] box3: `cadetblue`
-* [ ] box4: `coral`
-* [ ] box5: `crimson`
-* [ ] box6: `forestgreen`
-* [ ] box7: `darkorchid`
-* [ ] box8: `hotpink`
-* [ ] box9: `indigo`
-* [ ] box10: `dodgerblue`
+* [x] box1: `teal`
+* [x] box2: `gold`
+* [x] box3: `cadetblue`
+* [x] box4: `coral`
+* [x] box5: `crimson`
+* [x] box6: `forestgreen`
+* [x] box7: `darkorchid`
+* [x] box8: `hotpink`
+* [x] box9: `indigo`
+* [x] box10: `dodgerblue`
 
 ### About Page
 
 [Review the provided design file for the about page](design-files/about.png). You have been provided the HTML wrapper, footer, and page content for the about page. Create the rest of the missing HTML and CSS to match the design file.
 
-* [ ] Copy and paste your home page navigation and header into the about page
-* [ ] Update the header image with the about page image
-* [ ] Link the `Home` navigation item back to the `index.html` page.
-* [ ] Build the rest of the about page layout to match the design
+* [x] Copy and paste your home page navigation and header into the about page
+* [x] Update the header image with the about page image
+* [x] Link the `Home` navigation item back to the `index.html` page.
+* [x] Build the rest of the about page layout to match the design
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -105,4 +124,4 @@ After finishing your required elements, you can push your work further. These go
 * [ ] Build a page of your choosing from the navigation items.  Come up with content and images that fit the theme.  
 * [ ] Introduce CSS animations to your site.
 * [ ] Build a contact page and create a form with several inputs of your choosing
-* [ ] Add responsive breakpoints to your code by using media queries
+* [ ] Add responsive breakpoints to your code by using media queries *ATTEMPTED*

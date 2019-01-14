@@ -56,60 +56,39 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+/* code here */
+
+header nav a, header nav a:visited {
+    color: inherit;
+    text-decoration: none;
 }
 
-p {
-    line-height: 1.4;
-}
-
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+.blurb {
     border-bottom: 1px dashed black;
-}
-
-.top-content .text-container {
+    margin: 2em 0;
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.blurb:nth-child(-n+2) {
+    margin-top: 1em;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.blurb h2 {
+    margin-top: .75em;
 }
 
-.middle-content .boxes {
+.blurb img {
+    width: 100%;
+}
+
+.blurb-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bottom-about {
+    margin-bottom: 2em;
 }
 
 .bottom-content {
@@ -143,4 +122,143 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    margin: 1em 0;
+}
+
+header nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav a {
+    font-size: .9em;
+    padding: 1em 2em 0;
+}
+
+img.jumbo {
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.pseudo-button {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    padding: .6em 1.5em;
+    margin: 1.25em 0;
+}
+
+.top-about {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+}
+
+.top-about h2, .top-about p {
+    padding: 0 1em;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+/* Let's break some stuff! */
+/* Mobile responsive stretch attempts below */
+
+@media only screen and (min-width: 26rem) {
+    body {
+        margin: 0 auto;
+        width: 50rem;
+    }
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 25rem) {
+    body {
+        margin: 0 auto;
+        width: 25rem;
+    }
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+    .bottom-content .text-container {
+        margin-bottom: 1em;
+    }
+    .middle-content .boxes .box {
+        width: 100px;
+    }
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header nav a {
+        padding: 1em;
+    }
+    img.jumbo {
+        margin-top: 0;
+    }
+    .no-mobile {
+        display: none;
+    }
+    .top-content .text-container {
+        width: 100%;
+    }
 }
